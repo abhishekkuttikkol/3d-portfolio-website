@@ -1,4 +1,6 @@
 import './style.css'
+import spaceUrl from './space.jpg'
+import moonUrl from './moon.jpg'
 
 import * as THREE from 'three';
 
@@ -44,7 +46,7 @@ function addStar() {
 
 Array(600).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load(spaceUrl);
 scene.background = spaceTexture;
 
 const avatarTexture = new THREE.TextureLoader().load('https://avatars.githubusercontent.com/u/75170385?v=4');
@@ -53,7 +55,7 @@ const avatar = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasi
 
 scene.add(avatar);
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const moonTexture = new THREE.TextureLoader().load(moonUrl);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(5, 32, 32),

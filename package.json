@@ -11,6 +11,7 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
+    "firebase-tools": "^11.1.0",
     "three": "^0.141.0"
   }
 }
